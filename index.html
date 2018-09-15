@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<title>Creighton South Florida</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./wedding.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<link href="./favicon.ico" rel="icon" type="image/x-icon" />
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Home</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#stats" class="w3-bar-item w3-button"><i class="fa fa-bar-chart"></i> STATS</a>
+      <a href="#faq" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()">ABOUT</a>
+  <a href="#team" onclick="w3_close()">TEAM</a>
+  <a href="#stats" onclick="w3_close()">STATS</a>
+  <a href="#faq" onclick="w3_close()">FAQ</a>
+  <a href="#contact" onclick="w3_close()">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-padding-xxlarge w3-text-white" style="background-color:rgba(0,0,0,0.6);">
+    <span class="w3-jumbo w3-hide-small">Caring for your marriage</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Caring for your marriage</span><br>
+    <span class="w3-large">Caring for your body</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-xxlarge w3-text-grey w3-large">
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-text-white"><i class="fa fa-linkedin"></i></a>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container w3-padding-128" id="about">
+  <h3 class="w3-center">ABOUT CREIGHTON</h3>
+  <p class="w3-center w3-large">A method for naturally achiving or avoiding pregnancy</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-user-md w3-margin-bottom w3-jumbo w3-center"style='color:#123554'></i>
+      <p class="w3-large">Top Physicians</p>
+      <p>The Creighton Model System embodies the lifelong work of Thomas W. Hilgers, MD.  Charting with Creighton is highly standardized, allowing for streamlined access to
+         <a href="http://www.fertilitycare.org" target='_blank'>medical solutions</a>.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"style='color:pink'></i>
+      <p class="w3-large">Intimate and Respectful</p>
+      <p>Couples report increased levels of satisfaction and desire after aclimating to the system.  The sexual expression is true and authentic while the total exchange of persons is uninhibited.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-female w3-margin-bottom w3-jumbo"style='color:salmon'></i>
+      <p class="w3-large">Made for All Women</p>
+      <p>Women are not all the same, and neither are their bodies.  <a href="./testimonies">Check out client testimonies here</a>.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-bar-chart w3-margin-bottom w3-jumbo "style='color:#B0E0E6'></i>
+      <p class="w3-large">Effective</p>
+      <p>Whether aiming to achieve or avoid pregnancy, the odds are better with Creighton.  Check out our <a href="#stats">STATS</a> section for more info.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>How do I get started?</h3>
+      <p>There is a bit of a learning curve when you start to chart, and we don't want you to go it alone.<br>
+        Before you do anything else, attend one of our <a href="./poster.pdf">intro sessions</a> . If the date or time doesn't work for you,
+      contact one of our practitioners to set up an individual intro session.  Intro sessions are completely free and are the best way to find
+    out what Creighton is all about.  From there, we can get you started charting and schedule follow up appointments!</p>
+      <p><a href="#stats" class="w3-button w3-blue" ><i class="fa fa-bar-chart"> </i> Better Than Birth Control?</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="./hands2.jpg" alt="hands" width="700" height="194">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-padding-128" id="team">
+  <h3 class="w3-center">The South Florida Team</h3>
+  <p class="w3-center w3-large">The names and faces of Creighton in South Florida</p>
+  <div class="w3-center w3-row-padding" style="margin-top:64px;display:flex;flex-flow:row wrap;">
+   <div class="w3-col l3 m6 w3-margin-bottom" style="margin:auto;">
+      <div class="w3-card-2">
+        <img src="./sarah1.jpg" alt="sarah" style="width:100%">
+        <div class="w3-container">
+          <h3>Sarah McKeown</h3>
+          <p class="w3-opacity">FCPI</p>
+          <p>Sarah and her husband James started charting with Creighton three years ago. She joined the Creighton team in 2016.</p>
+          <p><button class="w3-button w3-block"><i class="fa fa-envelope"></i><a href="mailto:smfertilitycare@gmail.com" target="_blank" style="text-decoration:none"> Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="margin:auto;">
+      <div class="w3-card-2">
+        <img src="./lupe.jpg" alt="guadalupe" style="width:100%">
+        <div class="w3-container">
+          <h3>Guadalupe Carral</h3>
+          <p class="w3-opacity">FCPI</p>
+          <p>Guadalupe is a mother of four and has been teaching the Creighton model for the past few years.</p>
+          <p><button class="w3-button w3-block"><i class="fa fa-envelope"></i> <a href="mailto:lupitacrms@gmail.com" target="_blank" style="text-decoration:none"> Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="margin:auto;">
+      <div class="w3-card-2">
+        <img src="./james.jpg" alt="James" style="width:100%">
+        <div class="w3-container">
+          <h3>James McKeown</h3>
+          <p class="w3-opacity">Web Designer/Tech Guy</p>
+          <p>Is something broken on this site?  Send James an email and he'll fix it right away.</p>
+          <p><button class="w3-button w3-block"><i class="fa fa-envelope"></i> <a href="mailto:mckeown12@gmail.com" target="_blank" style="text-decoration:none"> Contact</a></button></p>
+        </div>
+      </div>
+    </div>
+  <!--  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!--
+Promo Section "Statistics"
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+-->
+<!-- stats Section -->
+<div class="w3-container w3-padding-128" id="stats">
+  <h3 class="w3-center">Statistics for the Creighton Model</h3>
+  <p class="w3-center w3-large">Avoiding or achieving, the odds are better here.</p>
+<!--  <div class="w3-row-padding" style="margin-top:64px">
+</div>
+-->
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>How does Creighton compare to Birth Control or IVF?</h3>
+      <p>NaProTechnology is nearly 3 times more sucessful than IVF for assisting infertile couples and
+         does not result in early abortions or frozen embryos.</p>
+      <p>NaPro's Prematurity Prevention Program has cut the rate of premature births from 12.1% to 7%.
+          Preterm birth is associated with numberous medical side effects for the baby. </p>
+          <p> Modern reproductive technology works to overcome the mestrual and fertility cycle by either suppressing or destroying them.
+            NaProTechnology works cooperatively with the menstrual and fertility cycles, respecting the dignity of women and marriage.
+            Current reproductive medicine uses a "band-aid" approach of prescribing birth control for any gynelogical or reproductive health issue.
+             NaProTechnology looks for the underlying causes of women's health issues, providing diagnosis and treatment. </p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-bar-chart w3-margin-right"></i>Avoiding Pregnancy with Perfect use of CrMS</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-pink w3-center" style="width:99.6%">99.6%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-bar-chart w3-margin-right"></i>Avoiding Pregnancy with Typical use of CrMS</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-pink w3-center" style="width:96.8%">96.8%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-bar-chart w3-margin-right"></i>Success rate for treating premenstrual syndrome (PMS)</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-pink w3-center" style="width:95%">95%</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FAQ Section -->
+
+<div class="w3-container w3-padding-128 w3-center w3-grey" id="faq">
+  <h3>Frequently Asked Questions</h3>
+  <p class="w3-large">We know it can be scary to try new things.  Here are a few questions we are often asked.</p>
+<div class='w3-container w3-large' align='left' id=qna>
+  <p class="fa fa-question-circle-o"> How does this system even work? Everyone says the rhythm method is ineffective.</p><br>
+  <p class="fa fa-reply">
+    Creighton Model System is NOT the rhythm method. It uses a prospective accumulation of objective and standardized data on the menstrual
+  and fertility cycles. This system is based on the observation and tracking of physical signs a woman has when she if fertile.
+The couple then uses this information to plan or avoid a pregnancy by knowing whether each day is fertile or infertile. The system has a 99.6%
+degree of effectiveness to avoid pregnancy and a very high degree of accuracy in achieving pregnancy.  </p><br>
+
+<p class="fa fa-question-circle-o"> I have irregular cycles.  Will Creighton work for me?</p><br>
+<p class="fa fa-reply">
+  Yes!  Everybodys body is different, but irregular cycles are often a symptom of underlying medical issues.  Birth control pills
+  mask the symptoms, but Creighton gets to the heart of the issues, in a natural and healthy way. </p><br>
+  <p class="fa fa-question-circle-o"> Won't this ruin my sex life? What about spontaneity? </p><br>
+  <p class="fa fa-reply">
+    Couples using CrMS report an increase in communication and a growth in the Spiritual, Physical, Intellectual, Communicative, and Emotional
+  (SPICE) dimensions of their sexuality and relationship. It is true that using CrMS to avoid pregnancy requires periodic abstinence. However,
+  times of abstinence are present and normal in every marriage, with or without contraceptive use. Couples often must abstain due to illness,
+  travel schedules, pregnancy etc. During these times, CrMS allows couples to become more generous, attentive, respectful and loving
+   to one another. As the couple grows in confidence and proficiency with CrMS, ovulation becomes easier to predict, and there are more
+   opportunities for spontaneity.
+</p><br>
+
+<p class="fa fa-question-circle-o">  Can I download charting material from this site? </p><br>
+<p class="fa fa-reply">   No.  Creighton is a highly standardized system.  We want to make sure that you are comfortable charting
+   and doing it correctly. If you need new charts or stamps, contact your practitioner and they will be happy to get you new material. </p><br>
+<p class="fa fa-question-circle-o">   Is there an app for charting? </p><br>
+<p class="fa fa-reply">   Not yet, but we'll keep you posted!  (We want one too!)</p><br>
+
+
+</div>
+
+</p>
+</div>
+<!--  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-128 w3-light-grey" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-center">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style='color:pink'></i> South Miami, FL</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style='color:pink'></i> Call Sarah: +218.368.8505</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style='color:pink'></i> Call Guadalupe: +713.203.2375</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style='color:pink'> </i> Email Sarah:
+         <a href="mailto:smfertilitycare@gmail.com" target="_blank" style="text-decoration:none"> smfertilitycare@gmail.com</a></p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style='color:pink'> </i> Email Guadalupe:
+         <a href="mailto:lupitacrms@gmail.com" target="_blank" style="text-decoration:none"> lupitacrms@gmail.com</a></p>
+      <br>
+<!--      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+       Add Google Maps
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+    </div> -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
