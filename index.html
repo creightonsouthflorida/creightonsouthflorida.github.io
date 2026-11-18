@@ -70,8 +70,11 @@
             box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
         }
         .topbar .wrap { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+        .topbar-right { display: flex; gap: 4px; align-items: center; margin-left: auto; flex-wrap: wrap; }
+        .topbar-social { padding: 12px; font-size: 1rem; color: var(--pink); }
+        .topbar-social:hover { color: var(--navy); text-decoration: none; }
         .brand { font-weight: 700; letter-spacing: .06em; padding: 14px 12px; }
-        .navlinks { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+        .navlinks { display: flex; gap: 4px; flex-wrap: wrap; }
         .navlinks a { padding: 12px; font-size: .85rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
         .navlinks a:hover { color: var(--navy); text-decoration: none; }
         .menu-button { display: none; padding: 12px; }
@@ -190,14 +193,17 @@
     <header class="topbar">
         <div class="wrap">
             <a href="#home" class="brand">CREIGHTON SOUTH FLORIDA</a>
-            <a href="javascript:void(0)" class="brand menu-button" id="menuButton" onclick="toggleMenu()" aria-label="Open menu"><i class="fa fa-bars"></i></a>
-            <nav class="navlinks" id="navLinks">
-                <a href="#about">About</a>
-                <a href="#team">Team</a>
-                <a href="#stats">Stats</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <div class="topbar-right">
+                <a href="javascript:void(0)" class="brand menu-button" id="menuButton" onclick="toggleMenu()" aria-label="Open menu"><i class="fa fa-bars"></i></a>
+                <nav class="navlinks" id="navLinks">
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+                    <a href="#stats">Stats</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <a href="https://www.instagram.com/melissagracetablada" class="topbar-social" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            </div>
         </div>
     </header>
 
@@ -213,9 +219,7 @@
                 <div class="label">Upcoming sessions</div>
                 <ul id="upcoming-sessions-list"></ul>
             </div>
-            <p class="social">
-                <a href="https://www.instagram.com/melissagracetablada" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-            </p>
+
         </div>
     </header>
 
