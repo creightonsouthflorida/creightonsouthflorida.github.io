@@ -155,9 +155,10 @@
         .qa { margin: 0 0 18px; padding: 16px 18px; background: #fff; border-radius: var(--radius); box-shadow: 0 2px 10px rgba(18, 53, 84, 0.06); }
         .qa .q { font-weight: 600; margin-bottom: 6px; }
 
-        .contact-list { list-style: none; margin: 28px 0 0; padding: 0; }
-        .contact-list li { padding: 8px 0; }
-        .contact-list i { color: var(--pink); width: 22px; }
+        .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
+        .contact .name { font-weight: 600; margin-bottom: 8px; }
+        .contact .line { margin: 0 0 6px; display: flex; gap: 8px; }
+        .contact .line i { color: var(--pink); min-width: 16px; }
 
         footer { background: var(--navy); color: #fff; text-align: center; padding: 40px 20px; }
         footer a { color: #fff; }
@@ -201,8 +202,7 @@
                 <ul id="upcoming-sessions-list"></ul>
             </div>
             <p class="social">
-                <a href="https://www.instagram.com/sarbearmckeown" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.instagram.com/sarbearmckeown" aria-label="Facebook"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://www.instagram.com/melissagracetablada" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
             </p>
         </div>
     </header>
@@ -377,26 +377,48 @@
         <div class="wrap">
             <h2 class="center">Contact</h2>
             <p class="center muted">Let's get in touch. Send us a message:</p>
-            <ul class="contact-list">
-                <li><i class="fa fa-map-marker"></i> South Miami, FL</li>
-                <li><i class="fa fa-phone"></i> Call Sarah: +218.368.8505</li>
-                <li><i class="fa fa-phone"></i> Call Guadalupe: +713.203.2375</li>
-                <li><i class="fa fa-phone"></i> Call Melissa: +407.739.4960</li>
-                <li><i class="fa fa-phone"></i> Call Pamela: +954.296.4670</li>
-                <li><i class="fa fa-phone"></i> Call GablesHealth (Dr. Peña's office): +305.227.8727</li>
-                <li><i class="fa fa-phone"></i> Call Dr. Garcia Iguaran's office: +786.581.6566</li>
-                <li><i class="fa fa-envelope"></i> Email Dr. Garcia Iguaran: <a href="mailto:dranagarcia@gmail.com">dranagarcia@gmail.com</a></li>
-                <li><i class="fa fa-envelope"></i> Email Sarah: <a href="mailto:smfertilitycare@gmail.com">smfertilitycare@gmail.com</a></li>
-                <li><i class="fa fa-envelope"></i> Email Guadalupe: <a href="mailto:lupitacrms@gmail.com">lupitacrms@gmail.com</a></li>
-                <li><i class="fa fa-envelope"></i> Email Melissa: <a href="mailto:melissagracetablada@gmail.com">melissagracetablada@gmail.com</a></li>
-                <li><i class="fa fa-envelope"></i> Email Pamela: <a href="mailto:pamcrms@gmail.com">pamcrms@gmail.com</a></li>
-            </ul>
+            <div class="contact">
+                <div class="card">
+                    <p class="name"><i class="fa fa-map-marker"></i> Location</p>
+                    <p class="line">South Miami, FL</p>
+                </div>
+                <div class="card">
+                    <p class="name">Sarah McKeown</p>
+                    <p class="line"><i class="fa fa-phone"></i><a href="tel:+12183688505">+218.368.8505</a></p>
+                    <p class="line"><i class="fa fa-envelope"></i><a href="mailto:smfertilitycare@gmail.com">smfertilitycare@gmail.com</a></p>
+                </div>
+                <div class="card">
+                    <p class="name">Guadalupe Carral</p>
+                    <p class="line"><i class="fa fa-phone"></i><a href="tel:+17132032375">+713.203.2375</a></p>
+                    <p class="line"><i class="fa fa-envelope"></i><a href="mailto:lupitacrms@gmail.com">lupitacrms@gmail.com</a></p>
+                </div>
+                <div class="card">
+                    <p class="name">Melissa Tablada</p>
+                    <p class="line"><i class="fa fa-phone"></i><a href="tel:+14077394960">+407.739.4960</a></p>
+                    <p class="line"><i class="fa fa-envelope"></i><a href="mailto:melissagracetablada@gmail.com">melissagracetablada@gmail.com</a></p>
+                </div>
+                <div class="card">
+                    <p class="name">Pamela Sandin</p>
+                    <p class="line"><i class="fa fa-phone"></i><a href="tel:+19542964670">+954.296.4670</a></p>
+                    <p class="line"><i class="fa fa-envelope"></i><a href="mailto:pamcrms@gmail.com">pamcrms@gmail.com</a></p>
+                </div>
+                <div class="card">
+                    <p class="name">Dr. Christina Peña · GablesHealth</p>
+                    <p class="line"><i class="fa fa-phone"></i><a href="tel:+13052278727">+305.227.8727</a></p>
+                    <p class="line"><i class="fa fa-globe"></i><a href="https://gableshealth.com/napro" target="_blank" rel="noopener">gableshealth.com/napro</a></p>
+                </div>
+                <div class="card">
+                    <p class="name">Dr. Ana Maria Garcia Iguaran</p>
+                    <p class="line"><i class="fa fa-phone"></i><a href="tel:+17865816566">+786.581.6566</a></p>
+                    <p class="line"><i class="fa fa-envelope"></i><a href="mailto:dranagarcia@gmail.com">dranagarcia@gmail.com</a></p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <p><a href="#home"><i class="fa fa-arrow-up"></i> To the top</a></p>
-        <p><a href="https://www.instagram.com/sarbearmckeown"><i class="fa fa-instagram"></i> @sarbearmckeown</a></p>
+        <p><a href="https://www.instagram.com/melissagracetablada"><i class="fa fa-instagram"></i> @melissagracetablada</a></p>
         <p class="muted">Creighton South Florida — South Miami, FL</p>
     </footer>
 
